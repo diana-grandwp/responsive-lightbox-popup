@@ -74,3 +74,93 @@
     border-radius: 2px;
 
 }
+
+/* Featured Plugin Begin */
+.gd_lightbox_featured_box{
+    display: block;
+    margin-top:20px;
+}
+.gd_lightbox_featured_lightbox, .gd_lightbox_featured_forms{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.gd_lightbox_featured_lightbox .gd_lightbox_plugin_image{
+    background: url("../../images/grandwp_calendar.png") no-repeat;
+    min-width: 312px;
+    min-height: 312px;
+}
+.gd_lightbox_featured_forms .gd_lightbox_plugin_image{
+    background: url("../../images/grandwp_forms.png") no-repeat;
+    min-width: 312px;
+    height: 312px;
+}
+.gd_lightbox_about_plugin{
+    border: 1px solid #eeeeee;
+    background-color: #f6f6f6;
+    max-width: 624px;
+}
+.gd_lightbox_plugin_title{
+    color: #252525;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 40px 0 0 40px;
+}
+.gd_lightbox_plugin_text{
+    padding: 20px 40px;
+    text-align: justify;
+    color: #505050;
+    font-size: 15px;
+    font-weight: 400;
+}
+.gd_lightbox_plugin_buttons{
+    text-align: center;
+}
+.gd_lightbox_plugin_buttons a{
+    display: inline-block;
+    font-size: 15px;
+    padding: 15px 25px;
+    border-radius: 50px;
+    margin: 0 15px;
+    text-decoration: none;
+}
+.gd_lightbox_plugin_buttons a:first-child{
+    border: 1px solid #2e5aef ;
+    background: #fff;
+    color: #2e5aef ;
+}
+.gd_lightbox_plugin_buttons a:last-child{
+    border: 1px solid #2e5aef ;
+    background: #2e5aef ;
+    color: #fff;
+}
+@media all and (max-width: 1024px){
+    .gd_lightbox_plugin_title{
+        padding: 25px 0 0 40px;
+    }
+    .gd_lightbox_plugin_text{
+        padding: 15px 40px;
+    }
+    .gd_lightbox_plugin_buttons a{
+        padding: 8px 25px;
+    }
+}
+@media all and (max-width: 768px){
+    .gd_lightbox_featured_lightbox, .gd_lightbox_featured_forms{
+        display: block;
+    }
+    .gd_lightbox_about_plugin{
+        min-height: 250px;
+        width: 100%;
+        max-width: none;
+    }
+    .gd_lightbox_featured_lightbox .gd_lightbox_plugin_image,
+    .gd_lightbox_featured_forms .gd_lightbox_plugin_image{
+        background-position: center center;
+        margin-bottom: 10px;
+    }
+    .gd_lightbox_plugin_buttons{
+        margin-bottom: 10px;
+    }
+}
+/* Featured Plugin End */

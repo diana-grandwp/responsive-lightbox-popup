@@ -57,6 +57,20 @@ class SettingsController
                 'features' => array(
                     'isPro' => true,
                 ),
+            ),
+            'yt_video' => array(
+                'title' => __('YouTube Video Options','gd_lightbox'),
+                'description' => __('From this section, you can turn on/off the main options related to Lightbox YouTube Video.', 'gd_lightbox'),
+                'features' => array(
+                    'isPro' => true,
+                ),
+            ),
+            'vm_video' => array(
+                'title' => __('Vimeo Video Options','gd_lightbox'),
+                'description' => __('From this section, you can turn on/off the main options related to Lightbox Vimeo Video.', 'gd_lightbox'),
+                'features' => array(
+                    'isPro' => true,
+                ),
             )
 
         ));
@@ -190,6 +204,13 @@ class SettingsController
                 'section' => 'general',
                 'help' => __('Enables desktop mouse drag support')
             ),
+            'videoMaxWidth' => array(
+                'type' => 'number',
+                'label' => __('Video Maximum width', 'gd_lightbox'),
+                'placeholder'=>__('Type here','gd_lightbox'),
+                'section' => 'general',
+                'help' => __('Video maximum width (in px).')
+            ),
             'thumbnail' => array(
                 'type' => 'checkbox',
                 'label' => __('Enable thumbnail', 'gd_lightbox'),
@@ -318,6 +339,48 @@ class SettingsController
                 'label' => __('Pinterest', 'gd_lightbox'),
                 'placeholder'=>__('Type here','gd_lightbox'),
                 'section' => 'share',
+            ),
+            'yt_autoplay' => array(
+                'type' => 'checkbox',
+                'label' => __('Autoplay', 'gd_lightbox'),
+                'placeholder'=>__('Type here','gd_lightbox'),
+                'section' => 'yt_video',
+                'help' => __('YouTube Video autoplay.')
+            ),
+            'yt_loop' => array(
+                'type' => 'checkbox',
+                'label' => __('Loop', 'gd_lightbox'),
+                'placeholder'=>__('Type here','gd_lightbox'),
+                'section' => 'yt_video',
+                'help' => __('YouTube Video loop.')
+            ),
+            'yt_controls' => array(
+                'type' => 'checkbox',
+                'label' => __('Controls', 'gd_lightbox'),
+                'placeholder'=>__('Type here','gd_lightbox'),
+                'section' => 'yt_video',
+                'help' => __('Switch YouTube Video controls.')
+            ),
+            'yt_rel' => array(
+                'type' => 'checkbox',
+                'label' => __('Related Videos', 'gd_lightbox'),
+                'placeholder'=>__('Type here','gd_lightbox'),
+                'section' => 'yt_video',
+                'help' => __('YouTube Video related videos.')
+            ),
+            'vm_autoplay' => array(
+                'type' => 'checkbox',
+                'label' => __('Autoplay', 'gd_lightbox'),
+                'placeholder'=>__('Type here','gd_lightbox'),
+                'section' => 'vm_video',
+                'help' => __('Vimeo Video autoplay.')
+            ),
+            'vm_loop' => array(
+                'type' => 'checkbox',
+                'label' => __('Loop', 'gd_lightbox'),
+                'placeholder'=>__('Type here','gd_lightbox'),
+                'section' => 'vm_video',
+                'help' => __('Vimeo Video loop.')
             ),
         ));
 

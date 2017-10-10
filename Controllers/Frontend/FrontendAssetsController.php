@@ -83,6 +83,15 @@ class FrontendAssetsController
             'googlePlus' => \GDLightbox()->settings->getOption('googlePlus'),
             'pinterest' => \GDLightbox()->settings->getOption('pinterest'),
         ));
+        wp_localize_script('gd_lightbox_video','gdLightboxvideo',array(
+            'videoMaxWidth' => \GDLightbox()->settings->getOption('videoMaxWidth'),
+            'yt_autoplay' => \GDLightbox()->settings->getOption('yt_autoplay'),
+            'yt_controls' => \GDLightbox()->settings->getOption('yt_controls'),
+            'yt_loop' => \GDLightbox()->settings->getOption('yt_loop'),
+            'yt_rel' => \GDLightbox()->settings->getOption('yt_rel'),
+            'vm_autoplay' => \GDLightbox()->settings->getOption('vm_autoplay'),
+            'vm_loop' => \GDLightbox()->settings->getOption('vm_loop'),
+        ));
     }
 
     public function printStyles()

@@ -1,6 +1,7 @@
 <?php
 
 namespace GDLightbox\Controllers\Admin;
+use GDLightbox\Helpers\ViewLoader;
 
 /**
  * Class AdminController
@@ -38,11 +39,27 @@ class AdminController
             'gd_lightbox_design',
             array('GDLightbox\Controllers\Admin\DesignSettingsController','index')
         );
+        $this->pages['featured_plugins'] = add_submenu_page(
+            'gd_lightbox',
+            __('Featured plugins', 'gd_lightbox'),
+            __('Featured plugins', 'gd_lightbox'),
+            'manage_options',
+            'gd_lightbox_featured',
+            array($this,'featuredPluginsPage')
+        );
     }
 
     public function actionHandling()
     {
         add_action('wp_ajax_save_gd_lightbox_settings', array('GDLightbox\Controllers\Admin\SettingsController','save'));
+    }
+
+    public function featuredPluginsPage()
+    {
+        ViewLoader::render('admin/header-banner.php');
+        ViewLoader::render('admin/featured-plugins.php');
+        wp_enqueue_style('gd_lightbox_settings', \GDLightbox()->pluginUrl().'/resources/assets/css/admin/settings.css');
+        wp_enqueue_style('gd_lightbox_admin_styles', \GDLightbox()->pluginUrl().'/resources/assets/css/admin/styles.css');
     }
 
 }

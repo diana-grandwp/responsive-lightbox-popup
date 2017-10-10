@@ -37,5 +37,10 @@
 .lg-outer .lg-thumb-item.active, .lg-outer .lg-thumb-item:hover {
     border-color: #<?php echo GDLightbox()->settings->getOption('gd_lightbox_thumbnail_border_color_active'); ?>;
 }
+@media all and (max-width: 600px) {
+    .lg-outer .lg-thumb-item:hover:not(.active) {
+        border-color:white;
+    }
+}
 <?php
 echo '</style>';

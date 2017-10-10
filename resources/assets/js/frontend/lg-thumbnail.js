@@ -225,7 +225,7 @@
 
                 // In IE9 and bellow touch does not support
                 // Go to slide if browser does not support css transitions
-                if ((_this.thumbClickable && !_this.core.lgBusy) || !_this.core.doCss()) {
+                if ((!_this.core.lgBusy) || !_this.core.doCss()) {
                     _this.core.index = _$this.index();
                     _this.core.slide(_this.core.index, false, true, false);
                 }

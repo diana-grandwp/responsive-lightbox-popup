@@ -62,6 +62,13 @@ class Settings
         'gd_lightbox_thumbnail_border_radius_px' => '4',
         'gd_lightbox_thumbnail_opacity' => '1',
         'gd_lightbox_thumbnail_border_color_active' => 'a90707',
+        'videoMaxWidth' => '855px',
+        'yt_autoplay' => '0',
+        'yt_controls' => '0',
+        'yt_loop' => '0',
+        'yt_rel' => '0',
+        'vm_autoplay' => '0',
+        'vm_loop' => '0',
     );
 
     private $proOptions = array(
@@ -100,6 +107,13 @@ class Settings
         'twitter',
         'googlePlus',
         'pinterest',
+        'videoMaxWidth',
+        'yt_autoplay',
+        'yt_controls',
+        'yt_loop' ,
+        'yt_rel' ,
+        'vm_autoplay',
+        'vm_loop' ,
 
     );
 
