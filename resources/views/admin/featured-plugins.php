@@ -12,8 +12,6 @@
                     widgets and more.', 'gd_lightbox'); ?>
             </div>
             <div class="gd_lightbox_plugin_buttons">
-                <a href="//en-au.wordpress.org/plugins/responsive-lightbox-popup/" target="_blank"><?php _e('Try Free', 'gd_lightbox'); ?></a>
-                <a href="//demo.grandwp.com/wordpress-responsive-lightbox-demo/" target="_blank"><?php _e('Demo', 'gd_lightbox'); ?></a>
             </div>
         </div>
     </div>
